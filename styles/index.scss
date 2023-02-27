@@ -1,29 +1,14 @@
 $textcolor: black;
 
-@media screen and (max-width: 1000px) {
-    .logo {
-        font-family: 'Baloo 2', cursive;
-        font-weight: 400;
-        font-size: 24px;
-    }
-    h1 {
 
-    }
-
-       
-   } 
-   @media screen and (max-width: 400px) {
-    
-    
-       
-   }
-  /* @media screen and (min-width: 1001px) {
+ /*@media screen and (min-width: 1001px) {
    
        
    }*/
 
 
 body {
+    max-width: 1200px;
     width: 90%;
     margin: 20px;
     display: flex;
@@ -76,10 +61,12 @@ main {
 
 }
 .conatiner_main-text {
-    width: 40%;
+    width: 50%;
+
     h1 {
         font-family: 'Poppins', sans-serif;
         font-size: 90px;
+        padding: 20px;
 
     }
     p {
@@ -90,6 +77,47 @@ main {
     }
 
 }
+
+button {
+    visibility: hidden;
+
+}
+@media screen and (max-width: 1000px) {
+    .logo {
+        font-family: 'Baloo 2', cursive;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .conatiner_main-text {
+        h1 {
+            font-size: 72px;           
+        }
+
+    }
+    button {
+        visibility: hidden;
+    }
+
+
+       
+   } 
+
+@media screen and (max-width: 400px) {
+
+    .conatiner_main-text {
+        h1 {
+            font-size: 46px;
+            }
+    
+        }
+        p {
+            font-sixe: 12px;
+        }
+        button {
+            visibility: visible;
+        }
+       
+   }
 
 .container_image {
    
