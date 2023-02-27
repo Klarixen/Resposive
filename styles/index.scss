@@ -1,12 +1,6 @@
 $textcolor: black;
 
 
- /*@media screen and (min-width: 1001px) {
-   
-       
-   }*/
-
-
 body {
     max-width: 1200px;
     width: 90%;
@@ -19,15 +13,17 @@ header {
     display: flex;
     flex-flow: row wrap;
     margin: 30px;
+    
 }
 .conatiner_logo {
     width: 50%;
     display: flex;
     justify-content: flex-start;
-    font-family: 'Aldrich', sans-serif;
-    font-size: 24px;
+    
 }
 .logo {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 24px;
 
 }
 nav {
@@ -53,6 +49,18 @@ ul {
 
     }
 }
+
+
+a:hover {
+    color: gray;
+
+}
+
+a:active {
+    color: lightblue;
+    transform:scale(2);
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -62,11 +70,17 @@ main {
 }
 .conatiner_main-text {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 
     h1 {
         font-family: 'Poppins', sans-serif;
         font-size: 90px;
         padding: 20px;
+        margin: 20px;
 
     }
     p {
@@ -78,10 +92,13 @@ main {
 
 }
 
-button {
+.button {
     visibility: hidden;
+    display: flex;
+    align-items: center;
 
 }
+
 @media screen and (max-width: 1000px) {
     .logo {
         font-family: 'Baloo 2', cursive;
@@ -94,7 +111,7 @@ button {
         }
 
     }
-    button {
+    .button {
         visibility: hidden;
     }
 
@@ -102,24 +119,23 @@ button {
        
    } 
 
-@media screen and (max-width: 400px) {
+   @media screen and (max-width: 500px) {
 
     .conatiner_main-text {
         h1 {
             font-size: 46px;
             }
+            p {
+                font-size: 12px;
+            }
     
         }
-        p {
-            font-sixe: 12px;
-        }
-        button {
+        .button {
             visibility: visible;
+
+        }
+        li {
+            visibility: hidden;
         }
        
    }
-
-.container_image {
-   
-
-}
