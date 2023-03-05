@@ -97,7 +97,7 @@ main {
 .drop-button {
     visibility: hidden;
     display: flex;
-    align-items: center;
+    justify-content: center;
 
 }
 .icon {
@@ -113,15 +113,28 @@ main {
     display: block;
     visibility: hidden;
     position: absolute;
+    width: 100%;
+    height: auto;
+    
 }
+
 .responsive ul {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: rgba(245, 245, 220, 0.43);
-    width: 100%;
+    top: 40px;
+    /*I have difficulties making this part span across the whole screen*/
+
+}
+.responsive ul li {
+    background-color:gray;
+    width: 100vh;
 }
 
+.responsive ul li:hover {
+    background-color: bisque;
+  
+}
 @media screen and (max-width: 1000px) {
     .logo {
         font-family: 'Baloo 2', cursive;
