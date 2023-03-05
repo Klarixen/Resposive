@@ -7,6 +7,7 @@ body {
     margin: 20px;
     display: flex;
     flex-flow: column;
+    margin: auto;
 
 }
 header {
@@ -34,6 +35,7 @@ nav {
     font-family: 'Source Sans Pro', sans-serif;
 
 }
+
 ul {
     display: flex;
     flex-direction: row;
@@ -44,7 +46,7 @@ ul {
         color: $textcolor;
 
     }
-    li {
+    .nav-list-item {
         margin: 20px;
 
     }
@@ -92,11 +94,32 @@ main {
 
 }
 
-.button {
+.drop-button {
     visibility: hidden;
     display: flex;
     align-items: center;
 
+}
+.icon {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    text-decoration: none;
+    color: black;
+
+}
+.nav {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+}
+.responsive ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(245, 245, 220, 0.43);
+    width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -111,7 +134,7 @@ main {
         }
 
     }
-    .button {
+    .drop-button {
         visibility: hidden;
     }
        
@@ -128,11 +151,24 @@ main {
             }
     
         }
-        .button {
+        .drop-button {
             visibility: visible;
 
         }
-        li {
+        .icon {
+            visibility: visible;
+
+        }
+        .icon:active {
+            .nav {
+                visibility: visible;
+                position: static;
+            }
+        }
+        .responsive ul li {
+            visibility: visible;
+        }
+        .nav-list-item {
             visibility: hidden;
         }
        

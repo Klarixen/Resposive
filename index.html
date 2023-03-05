@@ -24,14 +24,27 @@
         </div>
         <nav>
             <ul class="nav-list">
-                <a href="#"><li>Works</li></a>
-                <a href="#"><li>Services</li></a>
-                <a href="#"><li>Contacts</li></a>
+                <li class="nav-list-item"><a href="#">Works</a></li>
+                <li class="nav-list-item"><a href="#">Services</a></li>
+                <li class="nav-list-item"><a href="#">Contacts</a></li>
 
             </ul>
-        <div class="button">
-            <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-        
+        <div class="drop-button">
+            <div class="icon">
+            <a class="icon" onclick="burgerMenu()" href="javascript:void(0);"><i class="fa-solid fa-ellipsis"></i></a>
+            
+            </div>
+            
+           <div class="nav responsive" id="nav-bar">
+                <ul class="drop-items">
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contacts</a></li>
+    
+                </ul>
+            </div>
+
+            
         </div>
 
         </nav>
@@ -62,6 +75,15 @@
 
         </div>
     </main>
-    
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "nav") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "nav";
+            }
+        }
+        </script>
 </body>
 </html>
